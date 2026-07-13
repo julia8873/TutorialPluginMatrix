@@ -1,6 +1,6 @@
 # block_holamundo
 
-Plugin de bloque para Moodle que muestra un saludo personalizable y un contador de visitas por instancia.
+Plugin de bloque para Moodle que muestra "Hola Mundo" y un contador de visitas por instancia.
 
 ---
 
@@ -132,7 +132,7 @@ docker exec --user daemon moodle-app \
 
 ### Configurar el nombre por instancia
 
-Desde el navegador: engranaje ⚙️ del bloque → **"Configurar bloque Hello World"** → campo **"Name to greet (per instance)"**.
+Desde el navegador: engranaje del bloque → **"Configurar bloque Hello World"** → campo **"Name to greet (per instance)"**.
 
 > **Nota:** Moodle elimina el prefijo `config_` al serializar los campos del formulario.
 > El campo `config_nombre` del formulario se guarda y lee como `$this->config->nombre`.

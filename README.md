@@ -1,8 +1,6 @@
 # TutorialPluginMatrix
 
-Repositorio de prácticas del curso **CEPRUD** sobre desarrollo de plugins para Moodle e integración con Matrix/Element.
-
-Contiene dos componentes independientes:
+Tutorial de Plugin de Hello World usando bitname para Moodle.
 
 | Componente | Descripción |
 |---|---|
@@ -55,7 +53,7 @@ docker exec --user root moodle-app \
 
 ## Documentación detallada
 
-- 📦 **Plugin `holamundo`** → [`holamundo/README.md`](./holamundo/README.md)
+- **Plugin `holamundo`** → [`holamundo/README.md`](./holamundo/README.md)
   - Estructura del plugin, instalación paso a paso, comandos de diagnóstico
-- 🐳 **Entorno Docker** → [`moodle-matrix-dev/README.md`](./moodle-matrix-dev/README.md)
+- **Entorno Docker** → [`moodle-matrix-dev/README.md`](./moodle-matrix-dev/README.md)
   - Configuración de Moodle + Matrix, obtención del token de acceso, activación del proveedor Matrix
