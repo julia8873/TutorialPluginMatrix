@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- define tablas de BD si el plugin necesita guardar datos propios -->
+
+<!-- Tabla para contar el número de visualizaciones -->
+<XMLDB PATH="blocks/holamundo/db" VERSION="20250712" COMMENT="XMLDB para block_holamundo">
+  <TABLES>
+    <TABLE NAME="block_holamundo_visitas" COMMENT="Contador de visualizaciones del bloque">
+      <FIELDS>
+        <!-- id solo tiene sentido dentro de esta tabla (1,2,...)-->
+        <!-- Añadimos blocksintanceid para referenciar a cada bloque de cada curso pe -->
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <!-- Blockinstanceid por si hay una tabla por curso -->
+        <FIELD NAME="blockinstanceid" TYPE="int" LENGTH="10" NOTNULL="true"/>
+        <FIELD NAME="contador" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>
